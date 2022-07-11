@@ -1,0 +1,3 @@
+enum States {
+    NEW,RUNNING,FINISHED,BLOCKED,READY
+}

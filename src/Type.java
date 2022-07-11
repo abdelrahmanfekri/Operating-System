@@ -1,10 +1,6 @@
-public class Type {
-    int intData;
-    String stringData;
 
-    public Type(int intData) {
-        this.intData = intData;
-    }
+public class Type {
+    String stringData;
 
     public Type(String stringData) {
         this.stringData = stringData;
@@ -12,7 +8,7 @@ public class Type {
 
 
     public int getIntData() {
-        return intData;
+        return Integer.parseInt(stringData);
     }
 
     public String getStringData() {
@@ -21,12 +17,7 @@ public class Type {
 
 
     public String toString(){
-        if(stringData != null){
-            return getStringData();
-        }
-        else{
-            return Integer.toString(getIntData());
-        }
+        return stringData;
     }
 
 }

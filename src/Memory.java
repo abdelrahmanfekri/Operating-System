@@ -7,12 +7,12 @@ public class Memory {
         this.memory = new HashMap<>();
     }
 
-    public void add(String name, Type type) {
-        this.memory.put(name, type);
+    public void add(String name, Type type,int id) {
+        this.memory.put(name+id, type);
     }
 
-    public Type get(String name) {
-        return this.memory.get(name);
+    public Type get(String name,int id) {
+        return this.memory.get(name+id);
     }
 
     public void remove(String name) {
